@@ -1,6 +1,12 @@
 public class ArrayExamples {
 
   // Changes the input array to be in reversed order
+  // static void reverseInPlace(int[] arr) {
+  //   int [] arrCopy = arr; //WRONG! this is a reference to arr. not a duplicate
+  //   for(int i = 0; i < arr.length; i += 1) {
+  //     arr[i] = arrCopy[arr.length - i - 1];
+  //   }
+  // }
   static void reverseInPlace(int[] arr) {
     int[] arrCopy = new int[arr.length];
     for (int i = 0; i < arr.length; i++) {
